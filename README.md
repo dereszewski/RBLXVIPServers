@@ -1,6 +1,6 @@
 # RBLXVIPServers
 Roblox VIP Server Finder
-# Password
+# Verification Password
 INVISRBLX
 its not a generated just this lol
 # Is This Safe
