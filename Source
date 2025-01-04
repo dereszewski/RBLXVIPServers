@@ -1,0 +1,25 @@
+:: there is no code that makes the password i used bat to exe and there was a option to turn it on
+@echo off
+title Choose an Option
+echo.
+echo 1. Open Link 1 (VIP Server 1)
+echo 2. Open Link 2 (VIP Server 2)
+set /p choice="Type 1 or 2 and press Enter: "
+
+if "%choice%"=="1" (
+    call :open_link "https://rbxservers.xyz/extensions"
+) else if "%choice%"=="2" (
+    echo WARNING: Please disable any Ad Blocker or uBlock Origin as it may cause the site to not work correctly.
+    echo The extension is located further down the page.
+    echo Press any key to continue...
+    pause >nul
+    call :open_link "https://freevipservers.net/"
+) else (
+    echo Invalid choice. Please run the script again.
+    pause
+)
+exit
+
+:open_link
+start "" %1
+exit
